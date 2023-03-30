@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="author" content="Juan Morales" />
+      <meta
+            name="description"
+            content="El propósito de esta WebApp es facilitar las operaciones matemáticas a la hora de dividir gastos con  tus amigos❤️💸."
+      />
+      <meta
+            property="og:image"
+            content="./assets/img/metaimg.png"
+      />
+      <meta
+            property="og:description"
+            content="El propósito de esta WebApp es facilitar las operaciones matemáticas a la hora de dividir gastos con  tus amigos❤️💸."     
+      />
+      <meta property="og:title" content="Cuentas Claras" />
+      <link rel="stylesheet" href="./assets/css/style.css">
+      <link rel="stylesheet" href="./assets/css/header.css">
+      <link rel="stylesheet" href="./assets/css/form.css">
+      <link rel="stylesheet" href="./assets/css/cards.css">
+      <link rel="stylesheet" href="./assets/css/result.css">
+      <link rel="stylesheet" href="./assets/css/footer.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+      <link rel="shortcut icon" href="./assets/img/android-chrome-512x512.png" type="image/x-icon" />
+      <title>Cuentas Claras</title>
+</head>
+<body>
+      <!-- seccion del header -->
+      <header class="header">
+            <h1 class="header__title">Cuentas Claras</h1>
+            <p class="header__paragraph">Seamos amigos!!!</p>
+      </header>
+      <!-- seccion del formulario -->
+      <section class="form__section">
+            <form class="form" data-form>
+                  <p class="heading">Coloca Nombre y monto</p>
+                  <input id="name" class="input" placeholder="Nombre" type="text" required autocomplete="off" data-nombre>
+                  <input id="price" class="input" placeholder="Monto" type="number" required autocomplete="off" data-price> 
+                  <button type="submit" class="btn">Agregar a la cuenta &#128184; </button>
+                  <button class="btn" type="button" data-calcular>Calcular</button>
+            </form>
+      </section>
+      <!-- seccion de cards -->
+      <section class="cards" data-card>
+      </section>
+      <!-- seccion de resultados -->
+      <section class="result" data-result>
+      </section>
+      <!-- Seccion del footer -->
+      <footer class="footer">
+            <h2 class="footer__title">Creada por <a class="footer__link" href="http://">Juan Morales</a></h2>
+            <p class="footer__year">Copyright &copy; <script>document.write(new Date().getFullYear())</script></p>
+      </footer>
+</body>
+<script type="module" src="./assets/js/app.js"></script>
+</html>
