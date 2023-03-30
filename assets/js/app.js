@@ -1,10 +1,8 @@
 import { div } from "./card.js";
-// import { delateBtn } from "./botonEliminar.js";
 
 const formulario = document.querySelector("[data-form]");
 let totalPrecios = [];
 let nombres = [];
-let nombre = [];
 let contador = 0;
 formulario.addEventListener("submit", (evento) => {
     evento.preventDefault();
@@ -32,19 +30,14 @@ formulario.addEventListener("submit", (evento) => {
     preciosConNombres.sort((a, b) => b.precio - a.precio);
     totalPrecios = preciosConNombres.map(obj => obj.precio);
     nombres = preciosConNombres.map(obj => obj.nombre);
-    nombre = preciosConNombres.map(obj => obj.nombre);
     let countnombres = 0
     nombres.forEach(function(nombres) {
-      // funcion de crear div
-      nombre.forEach(function(nombre) {
-        // funcion de calculo y de crear ul
         let divicion = totalPrecios[countnombres]/contador;
-        if(divicion!=0 && nombre!=nombres){
+        if(divicion!=0){
           const result = document.querySelector("[data-result]");
-          const nuevaLinea = div.card2(nombre, nombres, divicion);
+          const nuevaLinea = div.card2(nombres, divicion);
           result.appendChild(nuevaLinea);
         }
-      });
       countnombres++
     });
   });

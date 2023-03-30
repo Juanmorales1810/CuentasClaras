@@ -16,15 +16,12 @@ const card = (nombre, precio, nombres, totalPrecios) => {
     item.children[2].appendChild(botonEliminar);
     return linea;
 }; 
-const card2 = (nombre, nombres, divicion) => {
+const card2 = (nombre, divicion) => {
     const linea = document.createElement("div");
     linea.classList.add("card__result");
     const contenido = `
     <ul class="card__container">
-        <li class="card__name">${nombre}</li>
-        <li class="card__name">==></li>
-        <li class="card__name">$${divicion.toFixed(2)}</li>
-        <li class="card__name">${nombres}</li>
+        <li class="card__name">A ${nombre} cada uno le pasa $${divicion.toFixed(2)}💸</li>
     </ul>
     `;
     linea.innerHTML = contenido;
