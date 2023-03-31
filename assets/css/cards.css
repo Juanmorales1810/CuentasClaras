@@ -10,7 +10,7 @@
     flex-direction: column;
     text-align: center;
     gap: 10px;
-    background-color: white;
+    background-color: #171a4a;
     padding: 1em;
     border-radius: 25px;
     transition: .4s ease-in-out;
@@ -18,11 +18,13 @@
 }
 
 .cards__name{
+    color: white;
     font-weight: 700;
     font-size:1.25rem;
     padding-bottom: 10px;
 }
 .cards__price{
+    color: white;
     font-style: italic;
     font-weight: 700;
     font-size: 1.16rem;
@@ -32,12 +34,6 @@
     transform: translateX(-0.5em) translateY(-0.5em);
     border: 1px solid #171717;
     box-shadow: 10px 10px 0px #666666;
-}
-.heading {
-    color: black;
-    padding-bottom: 2em;
-    text-align: center;
-    font-weight: bold;
 }
 
 .cards__btn {
@@ -51,16 +47,4 @@
     color: black;
     transition: .4s ease-in-out;
     box-shadow: rgba(0, 0, 0, 0.4) 1px 1px 1px;
-}
-
-.cards__btn:hover {
-    box-shadow: 6px 6px 0px #969696,
-                -3px -3px 10px #ffffff;
-    transform: translateX(-0.5em) translateY(-0.5em);
-}
-
-.cards__btn:active {
-    transition: .2s;
-    transform: translateX(0em) translateY(0em);
-    box-shadow: none;
 }
